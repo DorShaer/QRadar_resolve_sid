@@ -27,7 +27,7 @@ Attention to the script comments! If you want the script to work you need to fol
 
 1. Create Domain Admins reference set (can be any name you want)
 2. Generate a SEC key
-3. Have a domain user & password
+3. Have a valid domain user & password
 
 While creating the Custom Action you will have to enter those 5 keys in this order: 
 
