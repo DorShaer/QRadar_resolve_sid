@@ -1,7 +1,6 @@
 # QRadar_resolve_sid
 This code is designed for security integrators working with qradar
-## The following code is just a small project I did in order to resolve a username from SID number using 
-## LDAP Queries.
+## The following code is just a small project I did in order to resolve a username from SID number using LDAP Queries.
 
 This repo contains 2 files, as their names; one is resolving the username from SID and then adding the username to a Doamin Admins reference set.
 the second will resolve username from SID and then remove it from the Domain Admins reference set.
