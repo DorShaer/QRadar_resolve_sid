@@ -6,6 +6,14 @@ This code is designed for security integrators working with qradar
 This repo contains 2 files, as their names; one is resolving the username from SID and then adding the username to a Doamin Admins reference set.
 the second will resolve username from SID and then remove it from the Domain Admins reference set.
 
+**INSIDE THE SCRIPT YOU WILL HAVE AN LDAP QUERY! DON'T FORGET TO INSERT YOUR DOMAIN ADRESS TO THE QUERY IN LINE 94 !**
+EXAMPLE: 
+
+**ldapQuery = subprocess.Popen(
+        ["ldapsearch", "-x", "-b", "dc=Avengers, dc=local", "-H", "ldap://Avengers.local", "-D", domainUserName,
+         "-w", domainPassword, "(objectsid={0})".format(sid), "sAMAccountName"], stdout=subprocess.PIPE).communicate()[
+        0]**
+        
 ADD_USER:
 
 If the user is in the refernce set the script will just resolve the username and it will not do anything.
@@ -26,7 +34,5 @@ While creating the Custom Action you will have to enter those 5 keys in this ord
 
 1. Host
 2. Key
-3. domainUserName
-4. domainPassword
 5. Reference set 
 
