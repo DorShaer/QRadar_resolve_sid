@@ -32,6 +32,7 @@ Attention to the script comments! If you want the script to work you need to fol
 While creating the Custom Action you will have to enter those 5 keys in this order: 
 
 1. Host
-2. Key
-5. Reference set 
-
+2. KEY
+3. domainUserName
+4. domain Password
+5. refset
